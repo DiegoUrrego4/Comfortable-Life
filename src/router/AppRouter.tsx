@@ -6,6 +6,7 @@ import {
   ContactPage,
   GalleryPage,
   HomePage,
+  IndividualBlogPage,
   StorePage,
 } from '../pages';
 
@@ -18,6 +19,7 @@ export const AppRouter = () => {
         <Route path='about' element={<AboutUsPage />} />
         <Route path='store' element={<StorePage />} />
         <Route path='blog' element={<BlogPage />} />
+        <Route path='blog/:id' element={<IndividualBlogPage />} />
         <Route path='gallery' element={<GalleryPage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='/*' element={<Navigate to='/' />} />

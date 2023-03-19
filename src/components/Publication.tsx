@@ -1,15 +1,19 @@
+import { NavLink } from 'react-router-dom';
 import { BlogProps } from '../interfaces/interfaces';
 
-export const IndividualBlog = ({
+export const Publication = ({
   altTitle,
   author,
   blogDescription,
   blogTitle,
   date,
   img,
+  id,
+  className,
+  hasButton,
 }: BlogProps) => {
   return (
-    <article className='entrada'>
+    <article className={`entrada ${className} `}>
       <header>
         <h2>{blogTitle}</h2>
       </header>
@@ -28,9 +32,11 @@ export const IndividualBlog = ({
       <div className='entrada-blog'>
         <p>{blogDescription}</p>
       </div>
-      <a href='#' className='btn max-width-30 '>
-        Leer
-      </a>
+      {hasButton && (
+        <NavLink to={`/blog/${id}`} className='btn max-width-30 '>
+          Leer
+        </NavLink>
+      )}
     </article>
   );
 };
