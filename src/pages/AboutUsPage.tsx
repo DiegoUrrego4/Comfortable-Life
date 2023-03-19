@@ -1,7 +1,8 @@
+import { BasePage } from '../components';
+
 export const AboutUsPage = () => {
   return (
-    <main className='contenido-principal contenedor'>
-      <h2 className='text-center'>Sobre Nosotros</h2>
+    <BasePage pageTitle='Sobre Nosotros'>
       <div className='contenido-nosotros'>
         <div className='imagen'>
           <img src='../../src/assets/img/nosotros.jpg' alt='nosotros' />
@@ -21,6 +22,6 @@ export const AboutUsPage = () => {
           </p>
         </div>
       </div>
-    </main>
+    </BasePage>
   );
 };

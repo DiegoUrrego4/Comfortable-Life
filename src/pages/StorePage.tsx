@@ -1,6 +1,9 @@
+import { OurProducts } from '../components';
 
 export const StorePage = () => {
   return (
-    <div>StorePage</div>
-  )
-}
+    <>
+      <OurProducts />
+    </>
+  );
+};

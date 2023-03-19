@@ -19,3 +19,10 @@ export interface FooterProps {
   title: string;
   items: string[];
 }
+
+export interface BlogProps extends Image {
+  blogTitle: string;
+  date: string;
+  author: string;
+  blogDescription: string;
+}
