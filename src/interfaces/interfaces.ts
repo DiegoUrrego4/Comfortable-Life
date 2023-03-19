@@ -31,3 +31,7 @@ export interface BlogProps {
   hasButton?: boolean;
   className?: string;
 }
+
+export interface GalleryProps extends Image {
+
+}
